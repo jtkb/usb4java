@@ -74,7 +74,7 @@
     <libusb4java.build.dir>${project.parent.basedir}/libusb4java/target/build</libusb4java.build.dir>
     <libusb4java.library>${libusb4java.build.dir}/src/${libusb4java.nativelib.name}</libusb4java.library>
   </properties>
-  
+
   <scm>
     <connection>scm:git:git://github.com/usb4java/${project.artifactId}.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/usb4java/${project.artifactId}.git</developerConnection>
@@ -225,7 +225,7 @@
         </dependencies>
       </plugin>
 
-             Build binary artifacts for Unix, Mac OS X and Windows 
+             Build binary artifacts for Unix, Mac OS X and Windows
             <plugin>
               <artifactId>maven-assembly-plugin</artifactId>
               <version>2.5.3</version>
@@ -235,10 +235,10 @@
                   <descriptor>src/main/assembly/tarball.xml</descriptor>
                   <descriptor>src/main/assembly/zip.xml</descriptor>
                 </descriptors>
-                 Workaround for issue MASSEMBLY-449 
+                 Workaround for issue MASSEMBLY-449
                 <archiverConfig>
-                  <fileMode>420</fileMode>  420(dec) = 644(oct) 
-                  <directoryMode>493</directoryMode>  493(dec) = 755(oct) 
+                  <fileMode>420</fileMode>  420(dec) = 644(oct)
+                  <directoryMode>493</directoryMode>  493(dec) = 755(oct)
                   <defaultDirectoryMode>493</defaultDirectoryMode>
                 </archiverConfig>
               </configuration>
@@ -351,10 +351,10 @@
             <version>3.4</version>
         </dependency>
         <dependency>
-          <groupId>com.javatechnics</groupId>
+            <groupId>com.javatechnics</groupId>
             <artifactId>libusb4java</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-      </dependency>
+        </dependency>
     </dependencies>
 
 </project>
